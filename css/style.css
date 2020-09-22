@@ -1,5 +1,6 @@
 :root {
   --main-color: #911ec2;
+  --secondary-color: #5d2cd7;
 }
 
 * {
@@ -43,19 +44,17 @@ p {
   color: #77838f;
 }
 
-.container {
-  max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.navbar-background {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(144, 30, 193, 0.9)), color-stop(51%, rgba(116, 80, 254, 0.9)), to(rgba(144, 30, 193, 0.9)));
+  background-image: linear-gradient(to right, rgba(144, 30, 193, 0.9) 0%, rgba(116, 80, 254, 0.9) 51%, rgba(144, 30, 193, 0.9) 100%);
+  background-size: 200% auto;
 }
 
 .navbar {
   position: fixed;
   background-color: transparent;
   z-index: 10;
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
 }
 
@@ -66,6 +65,15 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -236,6 +244,219 @@ p {
   -webkit-animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
           animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
+}
+
+.features .feature-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 25px 6px rgba(154, 161, 171, 0.1);
+          box-shadow: 0px 0px 25px 6px rgba(154, 161, 171, 0.1);
+  text-align: right;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.features .feature-block .feature-icon {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.features .feature-block .feature-icon img {
+  width: 100%;
+}
+
+.features .feature-block p {
+  color: #77838f;
+}
+
+.features .img-box {
+  text-align: center;
+}
+
+.features .img-box img {
+  max-height: 500px;
+  -webkit-animation: floating 7s infinite;
+          animation: floating 7s infinite;
+}
+
+.how-it-work .how-it-work-img img {
+  width: 100%;
+  -webkit-animation: floating 7s infinite;
+          animation: floating 7s infinite;
+}
+
+.how-it-work .step-block {
+  padding: 30px 20px 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 25px 6px rgba(154, 161, 171, 0.1);
+          box-shadow: 0px 0px 25px 6px rgba(154, 161, 171, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-it-work .step-block .step-icon {
+  margin-left: 20px;
+}
+
+.how-it-work .step-block p {
+  color: #77838f;
+}
+
+.pricing .section-header {
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.pricing .btns-group .btn {
+  padding: 15px 30px;
+  position: relative;
+  border: 1px solid var(--secondary-color);
+  background: #fff;
+  color: var(--secondary-color);
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  margin: -2px;
+  cursor: pointer;
+}
+
+.pricing .btns-group .btn:first-of-type {
+  border-radius: 0 25px 25px 0;
+}
+
+.pricing .btns-group .btn:last-of-type {
+  border-radius: 25px 0 0 25px;
+}
+
+.pricing .btns-group .btn span {
+  position: absolute;
+  top: -16px;
+  left: -40px;
+  color: #fff;
+  background-color: #00c9a7;
+  padding: 8px 10px;
+  font-size: 11px;
+  border-radius: 14px;
+}
+
+.pricing .btns-group .btn.active {
+  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
+  background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+  background-size: 200% auto;
+  color: #fff;
+}
+
+.pricing .card {
+  margin: 20px 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 25px rgba(140, 152, 164, 0.125) !important;
+          box-shadow: 0 0 25px rgba(140, 152, 164, 0.125) !important;
+  border-radius: 15px;
+  padding: 0;
+}
+
+.pricing .card-header {
+  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #6b49ee), to(#901ec1));
+  background: linear-gradient(to right, #901ec1 0%, #6b49ee 51%, #901ec1 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  border-radius: 15px 15px 0 0;
+}
+
+.pricing .card-header h4 {
+  font-size: 25px;
+}
+
+.pricing .card-header span.price {
+  margin: 20px 0;
+  display: block;
+}
+
+.pricing .card-header span.price-currency {
+  vertical-align: top !important;
+}
+
+.pricing .card-header span.price-num {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.pricing .card-header span.price-date {
+  font-size: 16px;
+}
+
+.pricing .card-header .shape {
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+}
+
+.pricing .card-header .shape img {
+  width: 100%;
+}
+
+.pricing .card-content {
+  padding: 25px;
+}
+
+.pricing .card-content ul {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.pricing .card-content ul li {
+  margin: 15px 0;
+  font-size: 14px;
+  position: relative;
+}
+
+.pricing .card-content ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: absolute;
+  right: -30px;
+  color: var(--main-color);
+  font-size: 11px;
+  width: 25px;
+  height: 25px;
+  background-color: #911ec224;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.pricing .card-content .btn {
+  color: #901ec1;
+  background: rgba(144, 30, 193, 0.07);
+  padding: 12px 10px;
+  margin-top: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 0;
+  font-family: 'Tajawal', sans-serif;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.pricing .card-content .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
+  background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+  background-size: 200% auto;
+  color: #fff;
+}
+
+.pricing .top {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 @-webkit-keyframes wave {
