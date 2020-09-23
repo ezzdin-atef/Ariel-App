@@ -6,6 +6,8 @@
   <title>Ariel App</title>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -194,12 +196,12 @@
             <p>اختر الخدمة الأنسب لاحتياجاتك بسعر معقول.</p>
           </div>
           <div class="btns-group">
-            <button class="btn active">بالشهر</button>
-            <button class="btn">بالسنة <span>10% تخفيض</span></button>
+            <button class="btn active" id="month">بالشهر</button>
+            <button class="btn" id="year">بالسنة <span>10% تخفيض</span></button>
           </div>
         </div>
         <div class="col-md-7">
-          <div class="row content">
+          <div class="row content month">
             <div class="col-md-6">
               <div class="card">
                 <header class="card-header">
@@ -251,10 +253,222 @@
               </div>
             </div>
           </div>
+          <div class="row content year">
+            <div class="col-md-6">
+              <div class="card">
+                <header class="card-header">
+                  <h4>الخطة الفردية</h4>
+                  <span class="price">
+                    <span class="price-currency">$</span>
+                    <span class="price-num">122</span>
+                    <span class="price-date">/سنوياً</span>
+                  </span>
+                  <div class="shape">
+                    <img src="img/price-shape.svg" alt="shape">
+                  </div>
+                </header>
+                <div class="card-content">
+                  <ul>
+                    <li>دعم مجاني</li>
+                    <li>400+ صفحة</li>
+                    <li>100+ صفحات داخلية</li>
+                    <li>20+ صفحة رئيسية</li>
+                  </ul>
+                  <button class="btn">ابدأ الآن</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 top">
+              <div class="card">
+                <header class="card-header">
+                  <h4>خطط الشركات</h4>
+                  <span class="price">
+                    <span class="price-currency">$</span>
+                    <span class="price-num">299</span>
+                    <span class="price-date">/سنوياً</span>
+                  </span>
+                  <div class="shape">
+                    <img src="img/price-shape.svg" alt="shape">
+                  </div>
+                </header>
+                <div class="card-content">
+                  <ul>
+                    <li>دعم مجاني</li>
+                    <li>400+ صفحة</li>
+                    <li>100+ صفحات داخلية</li>
+                    <li>20+ صفحة رئيسية</li>
+                    <li>نطاق مجاني</li>
+                    <li>موقع تجارة الكترونية</li>
+                  </ul>
+                  <button class="btn">ابدأ الآن</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="section-block reviews">
+    <div class="shape-top"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="section-header">
+            <h2>ماذا يقول عملاؤنا!</h2>
+            <p>لا تصدق كلماتنا فقط. <br /> تحقق من هذه الشهادات من عملائنا الراضين!</p>
+          </div>
+          <div class="btns-group owl-nav">
+            <button class="btn" id="next-review"><i class="fas fa-chevron-right"></i></button>
+            <button class="btn" id="prev-review"><i class="fas fa-chevron-left"></i></button>
+          </div>
+          <button class="see-all-btn" id="">مشاهدة كل الأراء</button>
+        </div>
+        <div class="col-md-7">
+          <div class="content review-slider owl-carousel owl-theme">
+            <div class="review-box">
+              <p>"لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا !"</p>
+              <h4>سارة احمد</h4>
+              <span>مصممة مواقع</span>
+            </div>
+            <div class="review-box">
+              <p>"لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا !"</p>
+              <h4>لارين متولي</h4>
+              <span>مصمم مواقع</span>
+            </div>
+            <div class="review-box">
+              <p>"لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا !"</p>
+              <h4>ماركو فليب</h4>
+              <span>مبرمج</span>
+            </div>
+            <div class="review-box">
+              <p>"لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا !"</p>
+              <h4>محمود رجب</h4>
+              <span>مصمم مواقع</span>
+            </div>
+          </div>
+          <div class="content person-slider owl-carousel owl-theme">
+            <div class="person-box">
+              <img src="./img/author-1.jpg" alt="">
+            </div>
+            <div class="person-box">
+              <img src="./img/author-2.jpg" alt="">
+            </div>
+            <div class="person-box">
+              <img src="./img/author-3.jpg" alt="">
+            </div>
+            <div class="person-box">
+              <img src="./img/author-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-bottom"></div>
+  </section>
+  <section class="section-block questions">
+    <div class="container">
+      <div class="section-header">
+        <h2>الأسئلة المكررة</h2>
+        <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديد <br> يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير.</p>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="question-img">
+              <img src="./img/faq2.png" alt="faq" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="faq-box active">
+              <h4>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج?</h4>
+              <div class="faq-content">
+                <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس</p>
+              </div>
+            </div>
+            <div class="faq-box">
+              <h4>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج?</h4>
+              <div class="faq-content">
+                <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس</p>
+              </div>
+            </div>
+            <div class="faq-box">
+              <h4>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج?</h4>
+              <div class="faq-content">
+                <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس</p>
+              </div>
+            </div>
+            <div class="faq-box">
+              <h4>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج?</h4>
+              <div class="faq-content">
+                <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-block latest-blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>اقرأ آخر أخبارنا</h2>
+        <p>لورير سيت م ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج <br /> لوريم ايبسوم دولار سيت أميت .</p>
+      </div>
+      <div class="content">
+        <button class="btn-navigate" id="next-blog"><i class="fas fa-chevron-right"></i></button>
+        <button class="btn-navigate" id="prev-blog"><i class="fas fa-chevron-left"></i></button>
+        <div class="blog-slider owl-carousel owl-theme">
+          <article class="blog-post style1">
+            <div class="post-img">
+              <img src="./img/img2.jpg" alt="">
+            </div>
+            <div class="post-content">
+              <h4><a href="#">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</a></h4>
+              <div class="author">
+                <img src="./img/author-3.jpg" alt="3" />
+                <h5>سارة هشام</h5>
+              </div>
+            </div>
+          </article>
+          <article class="blog-post style2">
+            <div class="post-content">
+              <h4><a href="#">" لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس. "</a></h4>
+              <div class="author">
+                <img src="./img/author-3.jpg" alt="3" />
+                <h5>سارة هشام</h5>
+              </div>
+              <a href="#" class="btn">قراءة المزيد</a>
+            </div>
+          </article>
+          <article class="blog-post style1">
+            <div class="post-img">
+              <img src="./img/img1.jpg" alt="">
+            </div>
+            <div class="post-content">
+              <h4><a href="#">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت</a></h4>
+              <div class="author">
+                <img src="./img/author-1.jpg" alt="1" />
+                <h5>مارينا فليب</h5>
+              </div>
+            </div>
+          </article>
+          <article class="blog-post style2">
+            <div class="post-content">
+              <h4><a href="#">" لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس. "</a></h4>
+              <div class="author">
+                <img src="./img/author-4.jpg" alt="4" />
+                <h5>سمير محمود</h5>
+              </div>
+              <a href="#" class="btn">قراءة المزيد</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
