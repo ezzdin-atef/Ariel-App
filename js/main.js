@@ -33,7 +33,18 @@ $(document).ready(function(){
     items: 3,
     dots: false,
     loop: true,
-    rtl:true
+    rtl:true,
+    responsive: {
+      0 : {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      992: {
+        items: 3
+      }
+    }
   });
 
   $('#next-blog').click(function() {
@@ -65,6 +76,13 @@ $(document).ready(function(){
     $(".month").css("display", "flex");
     $("#month").addClass("active");
     $("#year").removeClass("active");
+  });
+
+  $(".mobile-menu").on("click", () => {
+    $(".navbar ul").slideToggle();
+    if (document.body.scrollTop <= 20 || document.documentElement.scrollTop <= 20) {
+      document.querySelector(".navbar").classList.add("navbar-background");
+    }
   });
   
 
