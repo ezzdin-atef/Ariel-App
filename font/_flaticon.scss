@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/09/2020 13:49
+    Creation date: 25/09/2020 13:52
     */
 
     @font-face {
@@ -42,9 +42,17 @@
 .flaticon-destination:before { content: "\f102"; }
 .flaticon-smartphone:before { content: "\f103"; }
 .flaticon-heart:before { content: "\f104"; }
+.flaticon-electric-light-bulb:before { content: "\f105"; }
+.flaticon-layer:before { content: "\f106"; }
+.flaticon-fingerprint:before { content: "\f107"; }
+.flaticon-app:before { content: "\f108"; }
     
     $font-Flaticon-time: "\f100";
     $font-Flaticon-send: "\f101";
     $font-Flaticon-destination: "\f102";
     $font-Flaticon-smartphone: "\f103";
     $font-Flaticon-heart: "\f104";
+    $font-Flaticon-electric-light-bulb: "\f105";
+    $font-Flaticon-layer: "\f106";
+    $font-Flaticon-fingerprint: "\f107";
+    $font-Flaticon-app: "\f108";

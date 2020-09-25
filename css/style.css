@@ -1066,6 +1066,57 @@ button:focus {
   margin: 3px;
 }
 
+.fearures2 {
+  background: #f8f9fb;
+  padding: 140px 0;
+  position: relative;
+}
+
+.fearures2 .section-header-style2 h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.fearures2 .section-header-style2 p {
+  font-size: 16px;
+}
+
+.fearures2 .btn {
+  margin-top: 0;
+}
+
+.fearures2 .feature-box {
+  background: #fff;
+  -webkit-box-shadow: 0px 30px 25px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+          box-shadow: 0px 30px 25px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+  border-radius: 25px;
+  padding: 50px 30px;
+  margin-bottom: 30px;
+}
+
+.fearures2 .feature-box .feature-icon i::before {
+  font-size: 50px;
+  background: #901ec1;
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #901ec1), color-stop(82%, #7450fe));
+  background: linear-gradient(to right, #901ec1 2%, #7450fe 82%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fearures2 .feature-box h3 {
+  margin: 7px 0;
+  font-weight: 500;
+}
+
+.fearures2 .feature-box p {
+  color: #77838f;
+}
+
+.fearures2 .features-boxes > div:last-of-type {
+  margin-top: 30px;
+}
+
 @-webkit-keyframes wave {
   0% {
     margin-left: 0;
