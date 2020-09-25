@@ -1,0 +1,24 @@
+.main-header {
+  height: auto;
+  .content {
+    padding: 40px 0;
+    margin: 0;
+    h1 {
+      font-size: 40px;
+    }
+    span {
+      color: #ffffffa1;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:after {
+          content: "  |  ";
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+.shape-bottom {
+  transform: scaleX(-1);
+}

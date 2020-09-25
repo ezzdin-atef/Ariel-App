@@ -1,6 +1,7 @@
 :root {
   --main-color: #911ec2;
   --secondary-color: #5d2cd7;
+  --shadow: 0 10px 20px 0 rgba(0, 51, 204, 0.1);
 }
 
 * {
@@ -26,7 +27,11 @@ button {
   }
 }
 
-.primary-btn {
+.btn {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.btn-primary {
   padding: 10px 25px;
   text-align: center;
   background-image: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
@@ -43,6 +48,22 @@ button {
   box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
   &:hover {
     background-position: right center !important;
+  }
+}
+
+.btn-light {
+  padding: 10px 25px;
+  text-align: center;
+  background-color: rgba(144, 30, 193, 0.07);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+    background-size: 200% auto;
+    color: #fff;
   }
 }
 
@@ -67,6 +88,20 @@ button {
   }
 }
 
+.section-header-style2 {
+  text-align: right;
+  margin-bottom: 30px;
+  h2 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #333;
+  }
+  p {
+    font-size: 14px;
+    color: #77838f;
+  }
+}
+
 .shape-top {
   background-image: url(../img/footer-top.svg);
   background-size: 100% 204px;
@@ -82,7 +117,7 @@ button {
 
 .shape-bottom {
   background-image: url(../img/footer-top.svg);
-  background-size: 100% 204px;
+  background-size: 100% 100%;
   bottom: 0;
   height: 180px;
   z-index: 1;
@@ -409,21 +444,9 @@ button {
         }
       }
       .btn {
-        color: #901ec1;
-        background: rgba(144, 30, 193, 0.07);
-        padding: 12px 10px;
         margin-top: 30px;
-        transition: all 0.5s;
-        border: 0;
-        font-family: 'Tajawal', sans-serif;
         width: 100%;
-        cursor: pointer;
         border-radius: 25px;
-        &:hover {
-          background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-          background-size: 200% auto;
-          color: #fff;
-        }
       }
     }
   }
@@ -444,37 +467,8 @@ button {
     .btn {
       width: 50px;
       height: 50px;
-      text-align: center;
       line-height: 50px;
-      background-color: rgba(144, 30, 193, 0.07);
-      color: var(--secondary-color);
-      border: 0;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: all 0.5s;
-      &:hover {
-        background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-        background-size: 200% auto;
-        color: #fff;
-      }
-    }
-  }
-  .see-all-btn {
-    padding: 10px 25px;
-    text-align: center;
-    background-image: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-    background-size: 200% auto;
-    color: white;
-    border: 0;
-    cursor: pointer;
-    transition: all 0.5s;
-    border-radius: 25px;
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: 'Tajawal', sans-serif;
-    box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
-    &:hover {
-      background-position: right center !important;
+      padding: 0;
     }
   }
   .review-box {
@@ -510,7 +504,6 @@ button {
         opacity: 1 !important;
       }
     }
-    
     .person-box {
       width: 60px;
       text-align: center;
@@ -680,18 +673,9 @@ button {
 }
 
 .contact {
-  .section-header {
-    text-align: right;
-    margin-bottom: 30px;
+  .section-header-style2 {
     h2 {
-      font-size: 24px;
-      margin-bottom: 3px;
-      color: #333;
       font-weight: 500;
-    }
-    p {
-      font-size: 14px;
-      color: #77838f;
     }
   }
   .contact-box {
@@ -973,6 +957,7 @@ button {
     margin-bottom: 40px;
   }
 }
+
 @media (max-width: 576px) {
   .latest-blog .content .btn-navigate {
     background-color: rgba(255, 255, 255, 0.6);

@@ -1,6 +1,7 @@
 :root {
   --main-color: #911ec2;
   --secondary-color: #5d2cd7;
+  --shadow: 0 10px 20px 0 rgba(0, 51, 204, 0.1);
 }
 
 * {
@@ -25,7 +26,11 @@ button:focus {
   outline: none;
 }
 
-.primary-btn {
+.btn {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.btn-primary {
   padding: 10px 25px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
@@ -45,8 +50,27 @@ button:focus {
           box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
 }
 
-.primary-btn:hover {
+.btn-primary:hover {
   background-position: right center !important;
+}
+
+.btn-light {
+  padding: 10px 25px;
+  text-align: center;
+  background-color: rgba(144, 30, 193, 0.07);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-light:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
+  background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+  background-size: 200% auto;
+  color: #fff;
 }
 
 .section-block {
@@ -72,6 +96,22 @@ button:focus {
   color: #77838f;
 }
 
+.section-header-style2 {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.section-header-style2 h2 {
+  font-size: 24px;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.section-header-style2 p {
+  font-size: 14px;
+  color: #77838f;
+}
+
 .shape-top {
   background-image: url(../img/footer-top.svg);
   background-size: 100% 204px;
@@ -88,7 +128,7 @@ button:focus {
 
 .shape-bottom {
   background-image: url(../img/footer-top.svg);
-  background-size: 100% 204px;
+  background-size: 100% 100%;
   bottom: 0;
   height: 180px;
   z-index: 1;
@@ -501,24 +541,9 @@ button:focus {
 }
 
 .pricing .card-content .btn {
-  color: #901ec1;
-  background: rgba(144, 30, 193, 0.07);
-  padding: 12px 10px;
   margin-top: 30px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 0;
-  font-family: 'Tajawal', sans-serif;
   width: 100%;
-  cursor: pointer;
   border-radius: 25px;
-}
-
-.pricing .card-content .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
-  background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-  background-size: 200% auto;
-  color: #fff;
 }
 
 .pricing .top {
@@ -540,45 +565,8 @@ button:focus {
 .reviews .btns-group .btn {
   width: 50px;
   height: 50px;
-  text-align: center;
   line-height: 50px;
-  background-color: rgba(144, 30, 193, 0.07);
-  color: var(--secondary-color);
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.reviews .btns-group .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
-  background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-  background-size: 200% auto;
-  color: #fff;
-}
-
-.reviews .see-all-btn {
-  padding: 10px 25px;
-  text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#901ec1), color-stop(51%, #7450fe), to(#901ec1));
-  background-image: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
-  background-size: 200% auto;
-  color: white;
-  border: 0;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 25px;
-  margin-top: 30px;
-  font-size: 16px;
-  font-family: 'Tajawal', sans-serif;
-  -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
-          box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
-}
-
-.reviews .see-all-btn:hover {
-  background-position: right center !important;
+  padding: 0;
 }
 
 .reviews .review-box {
@@ -825,21 +813,8 @@ button:focus {
   color: #333;
 }
 
-.contact .section-header {
-  text-align: right;
-  margin-bottom: 30px;
-}
-
-.contact .section-header h2 {
-  font-size: 24px;
-  margin-bottom: 3px;
-  color: #333;
+.contact .section-header-style2 h2 {
   font-weight: 500;
-}
-
-.contact .section-header p {
-  font-size: 14px;
-  color: #77838f;
 }
 
 .contact .contact-box {
